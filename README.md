@@ -4,16 +4,6 @@ A serial terminal for retro hardware — Arduino, ESP32, RC2014 Z80, and similar
 
 ttcore-port is a Linux port of [TeraTerm 5](https://github.com/TeraTermProject/teraterm) as a standalone C99 library (`libttcore`) with a GTK3 graphical interface. It runs entirely without Windows dependencies.
 
-**Features:**
-
-- VT100/VT220/xterm terminal emulation with 256-color support
-- XMODEM, YMODEM, and ZMODEM file transfer protocols (send and receive)
-- Scrollback buffer with mouse wheel navigation
-- Session logging (raw RX, optional TX, timestamps)
-- Cairo-rendered terminal with configurable fonts and colors
-- Cursor styles (block, underline, blink)
-- Intel HEX file upload for embedded development
-- Non-blocking I/O — no threads, no Sleep(), pure poll()-based architecture
 
 ## Requirements
 
@@ -93,8 +83,6 @@ The full list is also available in **Help > Keyboard Shortcuts**.
 - **Transfer > Send Text File** — send a text file line by line with configurable delay
 - **Transfer > Send Intel HEX** — upload Intel HEX files to embedded targets
 
-YMODEM and ZMODEM protocols are implemented in the library and available for integration.
-
 ## Hardware tested
 
 | Device          | Interface     | Notes                              |
@@ -107,12 +95,9 @@ YMODEM and ZMODEM protocols are implemented in the library and available for int
 
 - 1092 unit tests across 8 modules — all passing
 - Valgrind: 0 errors, 0 memory leaks
-- Google C/C++ Style Guide
-- Code coverage: 60–100% per module (80%+ on core modules)
 
 ## License
 
 MIT License. See [LICENSE](LICENSE).
 
-Based on [TeraTerm 5](https://github.com/TeraTermProject/teraterm) by the TeraTerm Project.
-The original TeraTerm character mapping tables (`src/mapping/`) are included from the TeraTerm source.
+Based on [TeraTerm 5](https://github.com/TeraTermProject/teraterm) by the amazing TeraTerm Project.
