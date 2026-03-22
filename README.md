@@ -1,4 +1,4 @@
-# ttcore-port
+# LX-RETROTERM
 
 A serial terminal for retro hardware — Arduino, ESP32, RC2014 Z80, and similar devices.
 
