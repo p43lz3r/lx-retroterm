@@ -6,7 +6,7 @@ ttcore-port is a Linux port of [TeraTerm 5](https://github.com/TeraTermProject/t
 
 ## Features & Design
 
-The terminal emulation features, serial communication options, and file transfer protocols implemented in this project are based on [TeraTerm 5](https://github.com/TeraTermProject/teraterm) by the TeraTerm Project. Not all TeraTerm features are present — a detailed coverage analysis is in progress and will be documented in `COVERAGE.md`.
+The terminal emulation features, serial communication options, and file transfer protocols implemented in this project are based on [TeraTerm 5](https://github.com/TeraTermProject/teraterm) by the TeraTerm Project. Not all TeraTerm features are present — a detailed coverage analysis is in progress and will be documented here soon.
 
 ## Requirements
 
