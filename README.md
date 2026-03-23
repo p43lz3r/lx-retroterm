@@ -4,6 +4,9 @@ A serial terminal for retro hardware — Arduino, ESP32, RC2014 Z80, and similar
 
 ttcore-port is a Linux port of [TeraTerm 5](https://github.com/TeraTermProject/teraterm) as a standalone C99 library (`libttcore`) with a GTK3 graphical interface. It runs entirely without Windows dependencies.
 
+## Features & Design
+
+The terminal emulation features, serial communication options, and file transfer protocols implemented in this project are based on [TeraTerm 5](https://github.com/TeraTermProject/teraterm) by the TeraTerm Project. Not all TeraTerm features are present — a detailed coverage analysis is in progress and will be documented in `COVERAGE.md`.
 
 ## Requirements
 
@@ -23,7 +26,7 @@ sudo apt install gcc cmake make libgtk-3-dev libglib2.0-dev pkg-config
 
    ```bash
    git clone https://github.com/p43lz3r/lx-retroterm.git
-   cd ttcore-port
+   cd lx-retroterm
    ```
 
 2. Create a build directory and compile:
@@ -60,19 +63,19 @@ All shortcuts use `Ctrl+Shift` to avoid conflicts with terminal input:
 
 | Shortcut         | Action                |
 |------------------|-----------------------|
-| Ctrl+Shift+O     | Connect / Disconnect |
-| Ctrl+Shift+D     | Rescan ports         |
-| Ctrl+Shift+N     | Next device          |
-| Ctrl+Shift+L     | Clear screen         |
-| Ctrl+Shift+C     | Copy selection       |
-| Ctrl+Shift+G     | Start / Stop log     |
-| Ctrl+Shift+T     | Send text            |
-| Ctrl+Shift+F     | Send text file       |
-| Ctrl+Shift+H     | Send Intel HEX       |
-| Ctrl+Shift+X     | XMODEM send          |
-| Ctrl+Shift+R     | XMODEM receive       |
-| Ctrl+Shift+S     | Serial config        |
-| Ctrl+Shift+B     | Toggle toolbar       |
+| Ctrl+Shift+O     | Connect / Disconnect  |
+| Ctrl+Shift+D     | Rescan ports          |
+| Ctrl+Shift+N     | Next device           |
+| Ctrl+Shift+L     | Clear screen          |
+| Ctrl+Shift+C     | Copy selection        |
+| Ctrl+Shift+G     | Start / Stop log      |
+| Ctrl+Shift+T     | Send text             |
+| Ctrl+Shift+F     | Send text file        |
+| Ctrl+Shift+H     | Send Intel HEX        |
+| Ctrl+Shift+X     | XMODEM send           |
+| Ctrl+Shift+R     | XMODEM receive        |
+| Ctrl+Shift+S     | Serial config         |
+| Ctrl+Shift+B     | Toggle toolbar        |
 
 The full list is also available in **Help > Keyboard Shortcuts**.
 
@@ -87,9 +90,9 @@ The full list is also available in **Help > Keyboard Shortcuts**.
 
 | Device          | Interface     | Notes                              |
 |-----------------|---------------|------------------------------------|
-| Arduino Uno     | USB-Serial    | ttyACM0, 115200 baud              |
-| ESP32-S3        | USB-CDC       | ttyACM0, 115200 baud              |
-| RC2014 Z80      | FTDI USB      | ttyUSB0, 115200 baud, RomWBW CP/M |
+| Arduino Uno     | USB-Serial    | ttyACM0, 115200 baud               |
+| ESP32-S3        | USB-CDC       | ttyACM0, 115200 baud               |
+| RC2014 Z80      | FTDI USB      | ttyUSB0, 115200 baud, RomWBW CP/M  |
 
 ## Quality
 
